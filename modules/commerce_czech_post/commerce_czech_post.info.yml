@@ -1,0 +1,7 @@
+name: 'Commerce Czech Post'
+type: module
+description: Commerce Czech Post
+core: 8.x
+package: Commerce Czech Pack
+dependencies:
+  - commerce_shipping
