@@ -1,0 +1,14 @@
+{
+    "name": "jakubhnilicka/commerce_czech_pack",
+    "description": "Group of Drupal Commerce usefull modules for Czech environment",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Jakub Hnilička",
+            "email": "ahoj@jakubhnilicka.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
