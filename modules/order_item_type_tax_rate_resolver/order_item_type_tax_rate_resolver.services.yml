@@ -1,0 +1,5 @@
+services:
+  order_item_type_tax_rate_resolver.tax_rate_resolver:
+    class: Drupal\order_item_type_tax_rate_resolver\Resolver\OrderItemTypeTaxRateResolver
+    tags:
+      - { name: commerce_tax.tax_rate_resolver, priority: 100 }

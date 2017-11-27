@@ -1,0 +1,7 @@
+type: module
+name: "Order Item Type Tax Resolver"
+description: "Order Item Type Tax Resolver"
+package: Commerce Czech Pack
+core: 8.x
+dependencies:
+  - commerce_tax
