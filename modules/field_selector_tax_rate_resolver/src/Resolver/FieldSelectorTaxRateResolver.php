@@ -21,7 +21,7 @@ class FieldSelectorTaxRateResolver implements TaxRateResolverInterface {
    * Machine name of field with tax rate selection.
    * Its string keys must match with ids of TaxZone::getRates().
    */
-  const PRODUCT_TAX_SECECTION_FIELD_NAME = 'field_product_tax_selection';
+  const PRODUCT_TAX_SELECTION_FIELD_NAME = 'field_product_tax_selection';
 
   /**
    * {@inheritdoc}
@@ -35,7 +35,7 @@ class FieldSelectorTaxRateResolver implements TaxRateResolverInterface {
     if ($purchasableEntity) {
       /** @var \Drupal\commerce_product\Entity\Product $productEntity */
       $productEntity = $purchasableEntity->getProduct();
-      $selectedTaxType = $productEntity->get(FieldSelectorTaxRateResolver::PRODUCT_TAX_SECECTION_FIELD_NAME)->value;
+      $selectedTaxType = $productEntity->get(FieldSelectorTaxRateResolver::PRODUCT_TAX_SELECTION_FIELD_NAME)->value;
 
       foreach ($rates as $rate) {
         if ($rate->getId() == $selectedTaxType) {
