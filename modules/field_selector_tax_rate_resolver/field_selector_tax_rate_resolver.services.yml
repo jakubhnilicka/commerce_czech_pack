@@ -1,0 +1,5 @@
+services:
+  order_item_type_tax_rate_resolver.tax_rate_resolver:
+    class: Drupal\field_selector_tax_rate_resolver\Resolver\FieldSelectorTaxRateResolver
+    tags:
+      - { name: commerce_tax.tax_rate_resolver, priority: 100 }

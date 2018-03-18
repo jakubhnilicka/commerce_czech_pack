@@ -1,0 +1,7 @@
+type: module
+name: "Field Selector Tax Resolver"
+description: "Resolve the tax rate by product tax selection field"
+package: Commerce Czech Pack
+core: 8.x
+dependencies:
+  - commerce_tax
