@@ -1,0 +1,36 @@
+# Copy to config/sync directory and rename to
+# field.storage.commerce_product.field_product_tax_selection.yml
+# Use drush cim to import and create field.
+# Then add the field into your selected product type.
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product.field_product_tax_selection
+field_name: field_product_tax_selection
+entity_type: commerce_product
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: standard
+      label: 'Základní 21 %'
+    -
+      value: reduced
+      label: 'Snížená 15 %'
+    -
+      value: super_reduced
+      label: 'Snížená 10 %'
+    -
+      value: zero
+      label: 'Žádná 0 %'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

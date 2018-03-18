@@ -20,6 +20,13 @@ class FieldSelectorTaxRateResolver implements TaxRateResolverInterface {
   /**
    * Machine name of field with tax rate selection.
    * Its string keys must match with ids of TaxZone::getRates().
+   * @example
+   *   standard|Základní 21 %
+   *   reduced|Snížená 15 %
+   *   super_reduced|Snížená 10 %
+   *   zero|Žádná 0 %
+   * @see Example of field configuration YML file
+   *   field.storage.commerce_product.field_product_tax_selection.yml
    */
   const PRODUCT_TAX_SELECTION_FIELD_NAME = 'field_product_tax_selection';
 
