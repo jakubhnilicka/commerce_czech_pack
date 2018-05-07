@@ -1,0 +1,7 @@
+name: 'Commerce Agree personal data pane'
+type: module
+description: 'Provides commerce checkout pane for agreement to personal data processing.'
+core: 8.x
+package: 'Commerce'
+dependencies:
+  - commerce:commerce
